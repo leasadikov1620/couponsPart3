@@ -19,4 +19,3 @@ public enum Categories {
         return name;
     }
 }
-//CHECK

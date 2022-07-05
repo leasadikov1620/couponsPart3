@@ -61,6 +61,8 @@ public class CustomerServiceImpl extends ClientService implements CustomerServic
         }
         couponRepo.addCouponPurchase(this.customerID, couponID);
         couponRepo.decreaseCouponAmount(couponID);
+
+       // return  couponID;
     }
 
     /**

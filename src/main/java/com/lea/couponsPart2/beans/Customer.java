@@ -34,6 +34,6 @@ public class Customer {
     @ToString.Exclude
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "customers_vs_coupons")
-    @JsonIgnore
+ //   @JsonIgnore
     private List<Coupon> coupons;
 }
