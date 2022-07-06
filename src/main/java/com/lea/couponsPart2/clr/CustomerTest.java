@@ -25,7 +25,7 @@ public class CustomerTest implements CommandLineRunner {
         System.out.println("Purchase coupon");
         customerService.purchaseCoupon(1);
        TablePrinter.print(customerService.getAllCustomerCoupons());
-
+//
         System.out.println("Get coupons by category - FOOD");
         TablePrinter.print(customerService.getAllCustomerCouponsByCategory(Categories.FOOD));
 

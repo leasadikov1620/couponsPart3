@@ -45,6 +45,7 @@ public class CustomerServiceImpl extends ClientService implements CustomerServic
      */
     @Override
     public void purchaseCoupon(int couponID) throws NotExistException, AlreadyExistsException {
+
         Optional<Coupon> optionalCoupon = couponRepo.findById(couponID);
 
         if (optionalCoupon.isEmpty()) {

@@ -20,7 +20,7 @@ public class CustomerController {
     private final JWT jwt;
     private final CustomerServiceImpl customerService;
 
-    @PostMapping("/purchaseCoupon")
+    @GetMapping("/purchaseCoupon/{couponID}")
     public ResponseEntity<?> purchaseCoupon(@RequestHeader(name = "Authorization") String token, @PathVariable int couponID) throws TokenException, LoginException, NotExistException, AlreadyExistsException {
         jwt.checkUser(token, ClientType.CUSTOMER);
 
